@@ -420,11 +420,8 @@ Some of these answers make sense! The model seems to sometimes struggle with sta
 
 - Data : Data has been most challenging part of this problem . We had 5 separate teams collecting data . 	
 
-  - A good amount of "cleaned "answers had urls , name of authors , tags ,tables etc 
-  - Pytorch documentation team provided 18k + data , but only 2k was useful as all other answers had words clubbed together , was not in readable format . For the sake of having good training data I had to omit 16k + QnA pairs from pytorch documentation team (which is  huge !!) . Cleaning this entire set was impossible by one person in 10 days so I had to loose this data . 
-  - Another file had all "y" and "z" same . Not even single answer was cleaned . Had to clean this additional 1000 QnA pairs to have at least 10k QnA pairs for training 
-  - Many teams didn't follow the correct "x","y","z" json data format . Some had additional variables like "null" ,"id" etc , some used "X","Y","Z" instead of "x","y","z"
-  - Manually checking all the data was impossible , I have fixed what I could fix in short time with data_processing.py file
+  - Retrieved data had good amount of urls , name of authors , tags ,tables etc cleaning this was most tedious task
+  - Data cleaning is provided in the data_processing.py file
   - After all cleaning we had only 11426  question answer pairs . In that 80 %  was used for training .
 
 - Computation time : In generator each epoch takes around 1 hour to complete in a single GPU . 
