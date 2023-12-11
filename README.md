@@ -418,7 +418,7 @@ Some of these answers make sense! The model seems to sometimes struggle with sta
 
 ## 9. Challenges 
 
-- Data : Data has been most challenging part of this problem . We had 5 separate teams collecting data . 	
+- Data : Data has been most challenging part of this problem . 
 
   - Retrieved data had good amount of urls , name of authors , tags ,tables etc cleaning this was most tedious task
   - Data cleaning is provided in the data_processing.py file
